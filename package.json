@@ -1,0 +1,17 @@
+{
+  "name": "enterprise-eprocurement-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enterprise E-Procurement and Supplier Portal System",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd server && npm run build && cd ../client && npm run build",
+    "start": "cd server && npm run start",
+    "seed": "cd server && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
